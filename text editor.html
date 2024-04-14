@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text editor</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .buttons{
+            height: 100%;
+            width: 8%;
+            font-size: 20px;
+            min-width: 40px;
+            min-height: 40px;
+            background-color: white;
+            border: 0px;
+            border-radius: 10%;
+        
+        }
+        #result{
+            margin: auto; 
+            width: 80%;
+            border-radius: 5%; 
+            background-color: white;
+            font-size: 40px; 
+            text-align: center; 
+            margin-top: 2%;
+            margin-bottom: 2%;
+            padding-bottom: 1%; 
+            padding-top: 1%;
+        }
+
+        #textField{
+            height: 100%; 
+            width: 70%;
+             font-size: 30px;
+              border-radius: 5%;
+        }
+   
+        
+    </style>
+</head>
+<body style="height: 80%;  background-color: #023020;">
+    <div id="content" style="height: 100%; margin-top: 6%;">
+        <div id="buttons" style="text-align: center; height: 10%;">
+            <button class="buttons" id="boldBtn" type="menu"><b>Bold</b></button>
+            <button class="buttons" id="italicBtn" type="menu"><i>Italic</i></button>
+            <button class="buttons" id="markBtn" type="menu"><mark>Mark</mark></button>
+            <button class="buttons" id="smallBtn" type="menu"><small>Small</small></button>
+            <button class="buttons" id="delBtn" type="menu"><del>Delete</del></button>
+            <button class="buttons" id="subBtn" type="menu" style="font-size: 15px;">x<sub>Subscript</sub></button>
+            <button class="buttons" id="supBtn" type="menu" style="font-size: 15px;">x<sup>Superscript</sup></button>
+            <button class="buttons" id="underlineBtn" type="menu" style="font-size: 15px;"><u>Underline</u></button>
+            <button class="buttons" id="bigBtn" type="menu"><b>Big</b></button>
+        </div>
+        
+        <div id="textBox" style="height: 40%; text-align: center; margin-top: 2%;">
+            <textarea name="" id="textField" value="value" ></textarea>
+        </div>
+        <div style="text-align: center;">
+            <p id="result" ></p>
+        </div>
+        
+    </div>
+    
+    <script src="text editor_js.js"></script>
+</body>
+</html>
